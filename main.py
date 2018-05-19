@@ -8,4 +8,5 @@ class MainClass:
 
 if __name__ =="__main__":
     main_obj = MainClass(11)
-    print(main_obj.get_triple())
+    for i in main_obj.get_triple():
+        print(i)
