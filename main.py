@@ -1,17 +1,20 @@
+def dec_l1(f_name):
+    def dec_l2(func_name):
+        def dec_l3(*var_):
+            with open(f_name, 'a') as f:
+                f.write("f={} get param=".format(f_name))
+                for par_ in var_[1:]:
+                    f.write("[{}]".format(par_))
+                result = func_name(*var_)
+                f.write(" result={}\n".format(str(result)))
+            return result
+
+        return dec_l3
+
+    return dec_l2
+
 
 class MainClass:
-    def dec_l1(f_name):
-            def dec_l2(func_name):
-                def dec_l3(*var_):
-                    with open(f_name, 'a') as f:
-                        f.write("f={} get param=".format(f_name))
-                        for par_ in var_:
-                            f.write("[{}]".format(par_))
-                        result = func_name(*var_)
-                        f.write(" result={}\n".format(str(result)))
-                    return result
-                return dec_l3
-            return dec_l2
 
     def __init__(self, max_val):
         self.max_val = max_val
