@@ -35,7 +35,7 @@ class MainClass:
             #if len(r):
             result.append(self.get_triple(i))
             '''print("i={} len={} |{}".format(i,len(result),result))
-            URA--
+            URA--+++
             for r_ in result:
                 for rr_ in r_:
                     print("!{}!".format(sum(rr_)))
