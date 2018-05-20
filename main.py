@@ -26,7 +26,7 @@ class MainClass:
         result =[]
         for v1 in range(1,val-1):
             for v2 in range(v1,(val-v1)/2+1):
-                result.append((v1,v2,val-v1-v2))
+                result.append((v1,v2,val-v1-v2-1))
         return result
     def get_all(self):
         result=[]
