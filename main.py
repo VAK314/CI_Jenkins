@@ -25,8 +25,8 @@ class MainClass:
     def get_triple(self,val):
         result =[]
         for v1 in range(1,val-1):
-#            for v2 in range(v1,(val-v1)/2+1):
-            for v2 in range(v1,val-v1):
+            for v2 in range(v1,(val-v1)/2+1):
+#            for v2 in range(v1,val-v1):
                 result.append((v1,v2,val-v1-v2))
         return result
     def get_all(self):
